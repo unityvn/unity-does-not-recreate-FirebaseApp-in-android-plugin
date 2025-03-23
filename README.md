@@ -1,7 +1,7 @@
 # Unity Doesn't Recreate FirebaseApp.dll in Plugins/Android
 
 ## Vấn đề: 
-- Khi tôi làm một sản phẩm game mới và sử dụng lại template của một game cũ trước đó. Trong folder `Assets/Plugins/Android/FirebaseApp.dll` nó sẽ không tạo lại file `FirebaseApp.dll` mặc dù đã Force Resolve nhưng không được (có đôi lần tôi xoá đi và play game trên editor thì nó tự tạo lại fire `FirebaseApp.dll` và vô tình lại xử lý được vấn đề này =))) ), còn phần lớn các lần khác thì xoá đi là mất hút luôn và không tự tạo lại.
+- Khi tôi làm một sản phẩm game mới và sử dụng lại template của một game cũ trước đó. Trong folder `Assets/Plugins/Android/FirebaseApp.dll` nó sẽ không tạo lại file `FirebaseApp.dll` mà sẽ lưu lại thông tin firebase của game cũ trước đó, mặc dù đã Force Resolve nhưng không được (có đôi lần tôi xoá đi và play game trên editor thì nó tự tạo lại fire `FirebaseApp.dll` và vô tình lại xử lý được vấn đề này =))) ), còn phần lớn các lần khác thì xoá đi là mất hút luôn và không tự tạo lại.
 
 <img width="846" alt="Screenshot 2025-03-23 at 19 54 33" src="https://github.com/user-attachments/assets/addccf6f-36bd-417a-854b-5cc3976f1209" />
 
