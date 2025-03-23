@@ -35,3 +35,7 @@
 - Sau khi sửa lại file thì tôi build một bản apk và sử dụng firebase debug view để kiểm tra thì các event tracking đã được bắn lên firebase console thành công, các biến remote config cũng được load về chính xác.
 
 Nếu các bạn gặp vấn đề tương tự thì chúc các bạn xử lý thành công nhé!!!!
+
+# Other
+[About me - And a bunch of other fun stuff!](https://github.com/VirtueSky)
+
