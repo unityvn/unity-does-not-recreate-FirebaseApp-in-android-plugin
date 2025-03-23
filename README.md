@@ -20,6 +20,18 @@
 <img width="1403" alt="Screenshot 2025-03-23 at 20 08 10" src="https://github.com/user-attachments/assets/e8b8e471-36d4-4f72-af4a-05da5e7a4e27" />
 
 - Đối chiếu thông tin và sửa lại file `google-service.xml` của `FirebaseApp.dll` sao cho thông tin đồng nhất với `google-service.json`
-
+- Thông tin các trường của `google-service.xml` sẽ tương ứng với các trường của `google-service.json` theo bảng dưới đây
+  
 |google-service.xml|google-service.json|
-|gcm_defaultSenderId|tương ứng với gcm_defaultSenderId|
+|:-----------------|:------------------|
+|------------------|-------------------|
+|`gcm_defaultSenderId`|`gcm_defaultSenderId`|
+|`google_storage_bucket`|`storage_bucket`|
+|`project_id`|`project_id`|
+|`google_api_key`|`current_key`|
+|`google_crash_reporting_api_key`|`current_key`|
+|`google_app_id`|`mobilesdk_app_id`|
+
+- Sau khi sửa lại file thì tôi build một bản apk và sử dụng firebase debug view để kiểm tra thì các event tracking đã được bắn lên firebase console thành công, các biến remote config cũng được load về chính xác.
+
+Nếu các bạn gặp vấn đề tương tự thì chúc các bạn xử lý thành công nhé!!!!
